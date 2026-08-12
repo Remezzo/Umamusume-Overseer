@@ -71,7 +71,7 @@ Overseer doesn't just show you data — it reads the turn and **tells you what i
 
 ## And the rest of the dashboard
 
-**Team Trials tools** (save & swap whole 15-Uma lineups, hunt a specific opponent while AFK) · **Veterans** roster with inheritance sparks · **career tracking** with leaderboards and history · **Discord webhooks** for finished careers · **AI Brain** learning from your own runs · **accessibility** (reduce motion, high contrast, text scaling, colour-vision modes) · **one-file diagnostic export** when you need help — all from one clean dashboard at `127.0.0.1:1620`.
+**Veterans** roster with inheritance sparks · **career tracking** with leaderboards and history · **Discord webhooks** for finished careers · **AI Brain** learning from your own runs · **accessibility** (reduce motion, high contrast, text scaling, colour-vision modes) · **one-file diagnostic export** when you need help — all from one clean dashboard at `127.0.0.1:1620`.
 
 ## Private by architecture
 
