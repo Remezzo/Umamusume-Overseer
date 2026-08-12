@@ -1,0 +1,144 @@
+Umamusume Overseer — Proprietary Software License Agreement
+Copyright © Rem and Ruru. All rights reserved.
+
+Version 1.0 — effective for Overseer 1.0 and later unless superseded.
+
+IMPORTANT — READ CAREFULLY. This License Agreement ("Agreement") is a legal
+agreement between you ("You") and the authors of Umamusume Overseer, "Rem and
+Ruru" (the "Authors"), governing the software application known as "Umamusume
+Overseer", including its executable installer, dynamic libraries, bundled data,
+translation packs, glossaries, web control panel, assets, and any updates the
+Authors make available (collectively, the "Software").
+
+Umamusume Overseer is PROPRIETARY, CLOSED-SOURCE software. It is not open source.
+No source code is provided, and none of the rights granted below include any right
+to the Software's source code.
+
+By downloading, installing, running, or otherwise using the Software, You accept
+and agree to be bound by this Agreement. If You do not agree, do not download,
+install, or use the Software, and delete any copy in Your possession.
+
+--------------------------------------------------------------------------------
+1. LICENSE GRANT
+--------------------------------------------------------------------------------
+Subject to Your continuous compliance with this Agreement, the Authors grant You
+a personal, limited, revocable, non-exclusive, non-transferable, non-sublicensable
+license to download and run one copy of the Software, in its unmodified, compiled
+form as distributed by the Authors, on computers You own or control, solely for
+Your own personal, non-commercial use.
+
+This is a license, not a sale. You acquire no ownership of the Software.
+
+--------------------------------------------------------------------------------
+2. RESTRICTIONS
+--------------------------------------------------------------------------------
+Except to the limited extent that applicable law expressly permits despite this
+Agreement, You shall NOT, and shall not permit or enable any third party to:
+
+  (a) copy the Software, except a single copy solely for personal backup;
+  (b) distribute, publish, share, upload, mirror, resell, rent, lease, lend,
+      sublicense, host, or otherwise make the Software available to any third
+      party, whether or not for charge, in whole or in part;
+  (c) modify, adapt, alter, translate, patch, or create derivative works of the
+      Software, or combine or integrate it with other software to produce a
+      derivative work;
+  (d) reverse engineer, decompile, disassemble, deobfuscate, or otherwise attempt
+      to derive the source code, algorithms, structure, or internal design of the
+      Software, or defeat, bypass, or circumvent any technical protection,
+      compilation, or obfuscation measure;
+  (e) remove, obscure, or alter any copyright, trademark, authorship, branding,
+      or other proprietary notice in or on the Software (including the "by Rem and
+      Ruru" attribution and the in-application branding);
+  (f) use the Software, or any part of it, as a component of, or to build, train,
+      or improve, any competing or derivative product or service;
+  (g) use the Software for any commercial purpose, or on behalf of any third party
+      as a service; or
+  (h) use the Software for any unlawful purpose.
+
+All rights not expressly granted in Section 1 are reserved to the Authors.
+
+--------------------------------------------------------------------------------
+3. OWNERSHIP AND INTELLECTUAL PROPERTY
+--------------------------------------------------------------------------------
+The Software is the exclusive property of the Authors and is protected by
+copyright and other intellectual-property laws and international treaties. The
+Authors retain all right, title, and interest in and to the Software, including
+all source code, compiled code, design, structure, algorithms, user interface,
+text, assets, and the "Overseer" name and branding. No title or ownership passes
+to You.
+
+--------------------------------------------------------------------------------
+4. THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+Overseer is closed-source and proprietary. Its compiled form may statically
+incorporate certain third-party software libraries, which remain governed by
+their own respective licenses as applied to those libraries only. This is solely
+an acknowledgement required by those libraries' licenses; it does NOT make Overseer
+open source, does NOT place any part of Overseer's own code or content under an
+open-source or free license, and grants You no right to Overseer's source code or
+to modify, reverse engineer, or redistribute the Software. The proprietary terms
+of this Agreement apply in full to the Software as a whole and to all of the
+Authors' own original code, content, and design.
+
+--------------------------------------------------------------------------------
+5. NO AFFILIATION
+--------------------------------------------------------------------------------
+The Software is an unofficial, fan-made companion tool. It is not affiliated with,
+endorsed, sponsored by, or connected to Cygames, Inc., or the "Umamusume: Pretty
+Derby" property. "Umamusume: Pretty Derby" and all related names, marks, and
+assets are the property of their respective owners. You are responsible for Your
+own use of the Software in relation to any third-party game or service, including
+compliance with that service's terms.
+
+--------------------------------------------------------------------------------
+6. UPDATES
+--------------------------------------------------------------------------------
+The Authors may, but are not obligated to, provide updates to the Software. Any
+update is governed by this Agreement unless it is accompanied by a separate
+license, in which case that license applies to that update.
+
+--------------------------------------------------------------------------------
+7. DISCLAIMER OF WARRANTY
+--------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
+WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+AND NON-INFRINGEMENT. THE AUTHORS DO NOT WARRANT THAT THE SOFTWARE WILL BE
+UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT IT WILL WORK WITH ANY PARTICULAR
+GAME VERSION OR SYSTEM. YOU USE THE SOFTWARE AT YOUR OWN RISK.
+
+--------------------------------------------------------------------------------
+8. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHORS
+BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR
+PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, GOODWILL, OR GAME ACCOUNT
+STANDING, ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS AGREEMENT, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE AUTHORS' TOTAL AGGREGATE LIABILITY
+UNDER THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE (WHICH,
+FOR A FREE DISTRIBUTION, IS ZERO).
+
+--------------------------------------------------------------------------------
+9. TERMINATION
+--------------------------------------------------------------------------------
+This Agreement is effective until terminated. It terminates automatically, without
+notice, if You breach any of its terms. The Authors may also terminate it at any
+time. Upon termination, all rights granted to You end immediately, and You must
+cease all use of the Software and destroy every copy in Your possession or control.
+Sections 2 through 8 and 10 survive termination.
+
+--------------------------------------------------------------------------------
+10. GENERAL
+--------------------------------------------------------------------------------
+This Agreement is the entire agreement between You and the Authors concerning the
+Software and supersedes all prior understandings. If any provision is held
+unenforceable, the remaining provisions remain in full force, and the unenforceable
+provision shall be enforced to the maximum extent permitted. The Authors' failure
+to enforce any provision is not a waiver of it. You may not assign or transfer this
+Agreement or any rights under it. Headings are for convenience only.
+
+For permissions beyond the scope of this License — including any redistribution,
+modification, or commercial use — contact the Authors via the official Discord:
+https://discord.gg/wpbd3hTBDc
+
+© Rem and Ruru. All rights reserved.
