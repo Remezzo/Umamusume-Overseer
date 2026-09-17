@@ -1,14 +1,39 @@
-Umamusume Overseer — Proprietary Software License Agreement
-Copyright © Rem and Ruru. All rights reserved.
+Remezzo / Icarus Network: Umamusume Overseer — Proprietary Software License Agreement
+Copyright © 2026 Remezzo / Icarus Network. All rights reserved.
 
-Version 1.0 — effective for Overseer 1.0 and later unless superseded.
+Version 2.0 — effective for Umamusume Overseer 1.1.0 and later, unless superseded.
+Supersedes Version 1.0 in respect of any version of the Software to which this
+Agreement is attached.
 
 IMPORTANT — READ CAREFULLY. This License Agreement ("Agreement") is a legal
-agreement between you ("You") and the authors of Umamusume Overseer, "Rem and
-Ruru" (the "Authors"), governing the software application known as "Umamusume
-Overseer", including its executable installer, dynamic libraries, bundled data,
-translation packs, glossaries, web control panel, assets, and any updates the
-Authors make available (collectively, the "Software").
+agreement between you ("You") and Remezzo / Icarus Network (the "Licensor"),
+governing the software application known as "Umamusume Overseer" ("Overseer").
+
+--------------------------------------------------------------------------------
+0. DEFINITIONS
+--------------------------------------------------------------------------------
+"Software" means Umamusume Overseer in all of its distributed parts, including
+without limitation:
+
+  (a) the installer and launcher executables distributed by the Licensor,
+      including "Overseer.exe";
+  (b) the companion engine and any dynamic libraries it installs;
+  (c) the standalone uninstaller distributed by the Licensor, including
+      "Overseer-Uninstall.exe";
+  (d) the platform launcher used to start the Japanese client;
+  (e) the bundled command-line and support utilities;
+  (f) the web control panel, its markup, scripts, styles and embedded assets;
+  (g) the translation packs, glossaries, data tables, artwork, icons and other
+      content the Licensor distributes with or for Overseer; and
+  (h) any patch, update, hotfix or new version of any of the above that the
+      Licensor makes available.
+
+"Your Content" means material You create using the Software that does not
+incorporate the Licensor's code or the Licensor's own distributed content — for
+example a translation pack You author yourself, or a settings file You configure.
+
+"Your Data" means files the Software writes on Your computer that record Your own
+activity — for example career telemetry, race exports, logs and settings.
 
 Umamusume Overseer is PROPRIETARY, CLOSED-SOURCE software. It is not open source.
 No source code is provided, and none of the rights granted below include any right
@@ -21,11 +46,15 @@ install, or use the Software, and delete any copy in Your possession.
 --------------------------------------------------------------------------------
 1. LICENSE GRANT
 --------------------------------------------------------------------------------
-Subject to Your continuous compliance with this Agreement, the Authors grant You
+Subject to Your continuous compliance with this Agreement, the Licensor grants You
 a personal, limited, revocable, non-exclusive, non-transferable, non-sublicensable
-license to download and run one copy of the Software, in its unmodified, compiled
-form as distributed by the Authors, on computers You own or control, solely for
-Your own personal, non-commercial use.
+license to:
+
+  (a) download and install the Software, in the unmodified compiled form as
+      distributed by the Licensor, on computers You own or personally control;
+  (b) run the Software on those computers for Your own personal, non-commercial
+      use; and
+  (c) retain one additional copy of the distributed files solely for backup.
 
 This is a license, not a sale. You acquire no ownership of the Software.
 
@@ -35,110 +64,158 @@ This is a license, not a sale. You acquire no ownership of the Software.
 Except to the limited extent that applicable law expressly permits despite this
 Agreement, You shall NOT, and shall not permit or enable any third party to:
 
-  (a) copy the Software, except a single copy solely for personal backup;
+  (a) copy the Software, except as expressly permitted by Section 1;
   (b) distribute, publish, share, upload, mirror, resell, rent, lease, lend,
-      sublicense, host, or otherwise make the Software available to any third
-      party, whether or not for charge, in whole or in part;
-  (c) modify, adapt, alter, translate, patch, or create derivative works of the
-      Software, or combine or integrate it with other software to produce a
-      derivative work;
+      sublicense, host, bundle, or otherwise make the Software available to any
+      third party, whether or not for charge, in whole or in part;
+  (c) modify, adapt, alter, translate, patch, repackage, or create derivative
+      works of the Software, or combine or integrate it with other software so as
+      to produce a derivative work;
   (d) reverse engineer, decompile, disassemble, deobfuscate, or otherwise attempt
-      to derive the source code, algorithms, structure, or internal design of the
-      Software, or defeat, bypass, or circumvent any technical protection,
-      compilation, or obfuscation measure;
-  (e) remove, obscure, or alter any copyright, trademark, authorship, branding,
-      or other proprietary notice in or on the Software (including the "by Rem and
-      Ruru" attribution and the in-application branding);
-  (f) use the Software, or any part of it, as a component of, or to build, train,
-      or improve, any competing or derivative product or service;
-  (g) use the Software for any commercial purpose, or on behalf of any third party
-      as a service; or
-  (h) use the Software for any unlawful purpose.
+      to derive the source code, algorithms, data formats, structure, or internal
+      design of the Software;
+  (e) defeat, bypass, disable, or circumvent any technical protection,
+      compilation, obfuscation, integrity, licensing, or update-verification
+      measure in the Software, or assist anyone in doing so;
+  (f) remove, obscure, alter, or falsify any copyright, trademark, authorship,
+      branding, version, or other proprietary notice in or on the Software,
+      including the in-application branding and the Licensor's attribution;
+  (g) represent a build of the Software not distributed by the Licensor as being
+      official, or distribute any such build;
+  (h) use the Software, or any part of it, or any output, data format, or
+      behaviour derived from inspecting it, as a component of, or to design,
+      build, train, or improve, any competing or derivative product or service;
+  (i) use the Software for any commercial purpose, or operate it on behalf of any
+      third party as a service, including selling access to it or to its output;
+  (j) use the Software in any manner that violates applicable law, or that
+      violates the terms of service of any third-party game or service with which
+      You use it.
 
-All rights not expressly granted in Section 1 are reserved to the Authors.
+All rights not expressly granted in Section 1 are reserved to the Licensor.
 
 --------------------------------------------------------------------------------
 3. OWNERSHIP AND INTELLECTUAL PROPERTY
 --------------------------------------------------------------------------------
-The Software is the exclusive property of the Authors and is protected by
+The Software is the exclusive property of the Licensor and is protected by
 copyright and other intellectual-property laws and international treaties. The
-Authors retain all right, title, and interest in and to the Software, including
-all source code, compiled code, design, structure, algorithms, user interface,
-text, assets, and the "Overseer" name and branding. No title or ownership passes
-to You.
+Licensor retains all right, title, and interest in and to the Software, including
+all source code, compiled code, design, structure, algorithms, data formats, user
+interface, text, artwork and other assets, and the "Overseer" and "Icarus Network"
+names and branding. No title or ownership passes to You.
 
 --------------------------------------------------------------------------------
-4. THIRD-PARTY COMPONENTS
+4. YOUR CONTENT AND YOUR DATA
 --------------------------------------------------------------------------------
-Overseer is closed-source and proprietary. Its compiled form may statically
-incorporate certain third-party software libraries, which remain governed by
-their own respective licenses as applied to those libraries only. This is solely
-an acknowledgement required by those libraries' licenses; it does NOT make Overseer
-open source, does NOT place any part of Overseer's own code or content under an
-open-source or free license, and grants You no right to Overseer's source code or
-to modify, reverse engineer, or redistribute the Software. The proprietary terms
-of this Agreement apply in full to the Software as a whole and to all of the
-Authors' own original code, content, and design.
+The Licensor claims no ownership of Your Content or Your Data.
+
+  (a) Your Data is Yours. The Software is designed to keep it on Your computer.
+      You may read, keep, move, publish, or delete it as You see fit.
+
+  (b) You may create, keep, and share Your Content — including translation packs
+      You author — and doing so is not a breach of Section 2, provided that Your
+      Content does not include the Software itself, any part of the Licensor's
+      compiled code, or content the Licensor distributes and did not author solely
+      for You.
+
+  (c) Nothing in this Section grants You any right to redistribute the Licensor's
+      own distributed translation packs, glossaries, artwork, or data tables
+      separately from the Software.
+
+  (d) If You choose to submit Your Content to the Licensor for inclusion in the
+      Software, You grant the Licensor a perpetual, worldwide, royalty-free,
+      non-exclusive license to use, adapt, and distribute it as part of the
+      Software. You retain ownership of it and may continue to use it yourself.
+      You may withdraw a submission from future releases by asking; the Licensor
+      is not obliged to recall releases already made.
 
 --------------------------------------------------------------------------------
-5. NO AFFILIATION
+5. THIRD-PARTY COMPONENTS
 --------------------------------------------------------------------------------
-The Software is an unofficial, fan-made companion tool. It is not affiliated with,
-endorsed, sponsored by, or connected to Cygames, Inc., or the "Umamusume: Pretty
-Derby" property. "Umamusume: Pretty Derby" and all related names, marks, and
-assets are the property of their respective owners. You are responsible for Your
-own use of the Software in relation to any third-party game or service, including
-compliance with that service's terms.
+The Software's compiled form may statically incorporate third-party software
+libraries, which remain governed by their own respective licenses as applied to
+those libraries only. Any such acknowledgement is required by those libraries'
+licenses and nothing more. It does NOT make the Software open source, does NOT
+place any part of the Licensor's own code, content, or design under an open-source
+or free license, and grants You no right to the Software's source code or to
+modify, reverse engineer, or redistribute the Software. The proprietary terms of
+this Agreement apply in full to the Software as a whole and to all of the
+Licensor's own original code, content, and design.
 
 --------------------------------------------------------------------------------
-6. UPDATES
+6. NO AFFILIATION
 --------------------------------------------------------------------------------
-The Authors may, but are not obligated to, provide updates to the Software. Any
-update is governed by this Agreement unless it is accompanied by a separate
-license, in which case that license applies to that update.
+The Software is an unofficial, independent companion tool. It is not affiliated
+with, endorsed by, sponsored by, or connected to Cygames, Inc., or the "Umamusume:
+Pretty Derby" property. "Umamusume: Pretty Derby" and all related names, marks,
+characters, and assets are the property of their respective owners.
+
+You are solely responsible for Your own use of the Software in relation to any
+third-party game or service, including compliance with that service's terms of
+service. You acknowledge that use of any third-party tool with an online game may
+carry risk to Your account, that the Licensor does not and cannot control how any
+game operator responds to such use, and that You accept that risk.
 
 --------------------------------------------------------------------------------
-7. DISCLAIMER OF WARRANTY
+7. UPDATES
+--------------------------------------------------------------------------------
+The Software may check for and offer updates. The Licensor may, but is not
+obligated to, provide them, and may change, suspend, or discontinue the Software
+or any of its features at any time without notice. Any update is governed by this
+Agreement unless it is accompanied by a separate license, in which case that
+license applies to that update.
+
+--------------------------------------------------------------------------------
+8. DISCLAIMER OF WARRANTY
 --------------------------------------------------------------------------------
 THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
 WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO
 THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
-AND NON-INFRINGEMENT. THE AUTHORS DO NOT WARRANT THAT THE SOFTWARE WILL BE
-UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT IT WILL WORK WITH ANY PARTICULAR
-GAME VERSION OR SYSTEM. YOU USE THE SOFTWARE AT YOUR OWN RISK.
+AND NON-INFRINGEMENT. THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE
+UNINTERRUPTED, ERROR-FREE, OR SECURE; THAT IT WILL WORK WITH ANY PARTICULAR GAME
+VERSION, CLIENT, OR SYSTEM CONFIGURATION; THAT ANY PREDICTION, RECOMMENDATION, OR
+TRANSLATION IT PRODUCES WILL BE ACCURATE OR COMPLETE; OR THAT IT WILL CONTINUE TO
+FUNCTION AFTER ANY UPDATE TO A THIRD-PARTY GAME. YOU USE THE SOFTWARE AT YOUR OWN
+RISK.
 
 --------------------------------------------------------------------------------
-8. LIMITATION OF LIABILITY
+9. LIMITATION OF LIABILITY
 --------------------------------------------------------------------------------
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHORS
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE LICENSOR
 BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR
-PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, GOODWILL, OR GAME ACCOUNT
-STANDING, ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS AGREEMENT, EVEN IF
-ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE AUTHORS' TOTAL AGGREGATE LIABILITY
-UNDER THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE (WHICH,
-FOR A FREE DISTRIBUTION, IS ZERO).
+PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS, GOODWILL, GAME PROGRESS, OR
+GAME ACCOUNT STANDING, ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS
+AGREEMENT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE LICENSOR'S
+TOTAL AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT YOU
+PAID FOR THE SOFTWARE (WHICH, FOR A FREE DISTRIBUTION, IS ZERO).
+
+Nothing in this Agreement excludes or limits liability that cannot lawfully be
+excluded or limited, including liability for death or personal injury caused by
+negligence, or for fraud.
 
 --------------------------------------------------------------------------------
-9. TERMINATION
+10. TERMINATION
 --------------------------------------------------------------------------------
 This Agreement is effective until terminated. It terminates automatically, without
-notice, if You breach any of its terms. The Authors may also terminate it at any
+notice, if You breach any of its terms. The Licensor may also terminate it at any
 time. Upon termination, all rights granted to You end immediately, and You must
-cease all use of the Software and destroy every copy in Your possession or control.
-Sections 2 through 8 and 10 survive termination.
+cease all use of the Software and destroy every copy in Your possession or
+control. Your Content and Your Data are unaffected by termination and remain
+Yours. Sections 2, 3, 5, 6, 8, 9, and 11 survive termination.
 
 --------------------------------------------------------------------------------
-10. GENERAL
+11. GENERAL
 --------------------------------------------------------------------------------
-This Agreement is the entire agreement between You and the Authors concerning the
+This Agreement is the entire agreement between You and the Licensor concerning the
 Software and supersedes all prior understandings. If any provision is held
-unenforceable, the remaining provisions remain in full force, and the unenforceable
-provision shall be enforced to the maximum extent permitted. The Authors' failure
-to enforce any provision is not a waiver of it. You may not assign or transfer this
-Agreement or any rights under it. Headings are for convenience only.
+unenforceable, the remaining provisions remain in full force, and the
+unenforceable provision shall be enforced to the maximum extent permitted. The
+Licensor's failure to enforce any provision is not a waiver of it. You may not
+assign or transfer this Agreement or any rights under it; the Licensor may assign
+it. Headings are for convenience only. This Agreement is written in English, and
+the English text governs.
 
 For permissions beyond the scope of this License — including any redistribution,
-modification, or commercial use — contact the Authors via the official Discord:
+modification, or commercial use — contact the Licensor via the official Discord:
 https://discord.gg/wpbd3hTBDc
 
-© Rem and Ruru. All rights reserved.
+© 2026 Remezzo / Icarus Network. All rights reserved.
