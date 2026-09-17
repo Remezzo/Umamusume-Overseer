@@ -149,28 +149,24 @@ presenting a guess as gospel.
 
 ## Getting onto the Japanese client without touching the game
 
-The Japanese client wraps its executable in commercial anti-tamper. At startup it **scans the game
-folder and refuses to launch if anything there is not stock.** It is a real wall, and the usual way
-through it is to let a tool **replace the game's executable** with a patched one.
+The Japanese client wraps its executable in commercial anti-tamper. At startup it scans the game
+folder and refuses to launch if anything there is not stock. It is a real wall, and the usual way
+through it is to let a tool replace the game's executable with a patched one.
 
 **Overseer replaces nothing and injects nothing.**
 
-A small launcher wires into Steam's Launch Options. When you press Play:
+Instead of touching the game, a small launcher works alongside it from the outside. It wires into
+Steam's Launch Options, the genuine unmodified game starts through Steam exactly as it always does —
+authentication and all — and Overseer ends up loaded the same way the game loads any of its own
+libraries. Nothing is patched, nothing is hooked, and nothing of Overseer's runs inside the game
+process for the anti-tamper to find.
 
-1. It moves Overseer's files out of the game folder, so the scan sees a completely stock install.
-2. It starts the **genuine, unmodified** game executable through Steam, so authentication runs
-   exactly as it normally would.
-3. It watches until the game is past its checks and loading the engine, then moves Overseer's files
-   back, so the game loads them the way it loads any other library.
-4. It puts everything back as it was when you quit.
+Because the game's own files are never altered, a game patch has nothing of ours to overwrite: the
+same install keeps working across updates, with no reinstall and no waiting for a fix.
 
-No patched executable, no hooked system library, nothing running inside the process for the
-anti-tamper to find — the whole trick happens outside it. And because it rides the stock launcher
-instead of replacing it, **a game patch does not break it.** There is no swapped executable for an
-update to overwrite and nothing to wait to be re-released.
+The installer sets all of this up for you, including the Steam Launch Option. You never need to know
+any of it is there.
 
-The installer does all of this for you, including writing the Steam Launch Option. You never need to
-know it exists.
 
 ---
 
