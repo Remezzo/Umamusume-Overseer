@@ -1,389 +1,421 @@
 <div align="center">
 
-<img src="web/overseer.png" alt="Overseer" width="120" />
+<img src="icarus.png" alt="Icarus" width="120" />
 
 # Overseer
 
-### The most complete companion for Umamusume — and the only viable app for both Global and JP. 
+### Play it in your language. Skip what you've seen. Know what happens *before* you click.
 
-**Overseer is the most feature-complete companion overlay for Umamusume: Pretty Derby, and the only one viable one across both the Global and Japanese clients — same build, same installer, same features on each.** It translates the entire game into your language, shows you every event outcome before you commit to it, prices every training with the game's own numbers, forecasts your races from the server's own simulation, spends your skill points for you to approve, and skips everything you have already seen.
+**The companion overlay that turns Umamusume: Pretty Derby into the game you always wanted it to be.** It translates the game from the inside, gives you back the hours you spend watching the same animations, and reads every turn, every event and every race before you commit. One file, zero setup, everything on your PC, on the Global and the Japanese client alike.
 
-Other tools cover one client, or one job. Overseer is the one you install once and keep, whichever client you play — and it never plays the game for you.
-
-[![Download](https://img.shields.io/badge/Download-Overseer.exe-2E7D46?style=for-the-badge)](https://github.com/Remezzo/Umamusume-Overseer/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Overseer.exe-D4A017?style=for-the-badge)](https://github.com/Remezzo/Umamusume-Overseer/releases/latest)
 &nbsp;
 [![Discord](https://img.shields.io/badge/Discord-Join_the_Icarus_hub-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/wpbd3hTBDc)
 
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
-![Release](https://img.shields.io/badge/release-1.1.0-2E7D46)
-![Clients](https://img.shields.io/badge/clients-Global_%2B_Japan-6a4ea1)
-![Languages](https://img.shields.io/badge/languages-26-8a5cf5)
-![Runs locally](https://img.shields.io/badge/runs-100%25_on_your_PC-1f7a4d)
+![Version](https://img.shields.io/badge/release-1.1.2-D4A017)
+![Clients](https://img.shields.io/badge/clients-Global_%2B_Japanese-1f7a4d)
+![Languages](https://img.shields.io/badge/languages-12_built_in-1f7a4d)
 ![License](https://img.shields.io/badge/license-Proprietary-c02626)
 
+[What's new in 1.1.2](CHANGELOG.md) 
+
 </div>
 
 ---
 
-## The game does not tell you anything
+> **Download `Overseer.exe` → double-click → play.** It finds your game on any Steam drive, installs itself, opens its control panel and keeps itself up to date. No Python, no extracting, no folders to copy, no guide to follow. If you can double-click, you're done.
 
-You pick a training. You do not know what it gives you until it is given. An event fires with three
-options and no indication which one matters; the wiki tab you keep open has the answer, if you can
-find the event, in the language you read, before the mood wears off. You enter a race with no idea
-whether you can win it. You spend skill points on a hunch.
-
-None of that is difficulty. **The numbers exist.** The game's own servers send them to your client
-every single turn — the exact stat gains for every facility, the real failure percentage, the full
-outcome table for the event on screen, a complete simulation of the race about to run. The client
-receives all of it and shows you almost none of it.
-
-**Overseer puts them on screen.** It reads what the game already knows, in the moment it knows it,
-and shows you the answer where you are looking. Then it skips the parts you have watched two
-hundred times.
-
-That is why there is no partial version of this that would do. A translator that cannot read the
-event table cannot tell you what a choice does. A predictor that cannot render Japanese cannot help
-on the client that needs it most. A skip that does not know whether you won cannot know what is safe
-to skip. Overseer is built as one thing because the pieces are only useful together.
+**Overseer is advice-first.** It reads what the game already knows and puts it in front of you in time; every decision stays yours. The handful of features that can press a button for you are **off until you switch them on**, and each one says exactly what it does.
 
 ---
 
-## One tool, both clients
+## Contents
 
-Most people who play this game seriously end up touching both clients — Japan for what is out now,
-Global for the account they have actually invested in. Companion tools exist for each. **What does
-not otherwise exist is one tool that covers both.**
-
-Overseer is the same binary on Global and Japan, from the same installer, with the same features on
-each. Run both clients at once and each gets its own panel. You learn it once, you configure it
-once, and what you know transfers.
-
-That includes the vocabulary. Japan now uses **Global's own terminology** — Front Runner, Pace
-Chaser, Late Surger, End Closer — across skills, aptitudes, missions and the race screen, so a
-guide, a screenshot or a piece of advice written for one client reads correctly on the other. That
-is 1,349 strings, and the skill names were taken by id from Global's own table rather than
-word-swapped, so "Frantic Leaders" is "Frenzied Pace Chasers" the way Global actually writes it.
-
-Where the two clients genuinely differ, Overseer handles the difference instead of pretending it is
-not there. Japan's server does not pre-roll event branches the way Global's does, so on Japan those
-are shown as an honest range rather than a false certainty.
+[At a glance](#at-a-glance) · [Translation](#translation-that-reads-like-the-game) · [Gamemaster](#gamemaster-know-it-before-you-click) · [Racing](#racing-the-whole-race-before-during-and-after) · [In the game itself](#in-the-game-itself-the-rail-and-the-marks) · [HyperSkip](#hyperskip-respect-for-your-time) · [Performance](#performance) · [Accessibility](#accessibility) · [Tools](#tools) · [Telemetry & data](#telemetry--your-data) · [Dashboard](#dashboard) · [Settings & the panel](#settings-and-the-panel) · [Global and JP](#global-and-jp) · [Privacy](#private-by-architecture) · [Install](#install-update-uninstall) · [Troubleshooting](#troubleshooting) · [FAQ](#faq)
 
 ---
 
-## Know it before you click
+## At a glance
 
-Overseer watches the career loop and answers the question you are actually asking at each step:
-
-```
-   YOUR TURN
-      |
-      +-- The training board  ->  every facility's real gains, its failure chance,
-      |                           who is on it, and which one actually scores best
-      |
-      +-- An event fires      ->  every outcome of every option, side by side,
-      |                           and the winning branch marked IN THE GAME
-      |
-      +-- Race day            ->  where you will finish, from the server's own
-      |                           simulation of the race, before it runs
-      |
-      +-- Skill points        ->  the exact buy list that adds the most rating,
-      |                           highlighted on the shop rows themselves
-      |
-      +-- Inheritance         ->  the game's own affinity number for the pair
-      |                           you are hovering, live, with the tray ranked
-      |
-      +-- Everything seen     ->  skipped
-```
-
-### Training predictions are the game's own numbers, not a model
-
-When the server prices this turn's board, Overseer reads the prices. You get one row per facility
-showing the **exact** stat gains, skill points, energy cost and **real failure percentage** — the
-same figures the game is working from, not an estimate of them.
-
-Beside each row is a score, and the score is explained rather than asserted. It accounts for your
-current stats against your caps, how far ahead or behind the scenario's pace you are, which support
-partners are on the tile, their bond, rainbow status, and whether a hint you want is attached. A
-facility that looks strong but dumps points into a stat you have already capped scores lower, and
-the panel tells you that is why.
-
-### Event outcomes appear before you choose, not after
-
-Every option, with every branch it can take, in full — stats, skill points, energy, mood, bond,
-skills granted, and the conditions attached.
-
-Where the server has already rolled which branch will fire and tells the client, **Overseer marks
-that row in the game itself** — a tick on the actual choice button, so you never look away to a
-second monitor. Where the server genuinely has not decided, Overseer says so and gives you the range
-rather than inventing a certainty. That distinction is enforced in the code: an unknowable branch is
-marked *not at all*, rather than marking every candidate and hoping.
-
-Optional auto-choice will take the best option for you when you would rather not click.
-
-### The race forecast comes from the race
-
-Not from ratings, not from a heuristic. The game sends your client a full simulation of the race —
-every horse, its position at every moment, the finishing order — and Overseer decodes it and tells
-you where you will place **before the gate opens**. Scenario races where every horse is anonymous
-are handled too, by identifying your trainee from her own character rather than an id the server
-withheld.
-
-### The Skill Optimizer spends your points for you to approve
-
-It reads the shop the game is actually selling — including inherited skills, uniques and unhinted
-whites that a reconstruction from static data structurally cannot see — and solves for the buy list
-that adds the most rating within the SP you have.
-
-Then it **outlines those rows on the skill screen itself**, so you can buy what is glowing and close
-the panel. It recomputes as you pick, and never double-counts something you already selected by
-hand.
-
-### The Live Advisor is a coach, not a cheerleader
-
-One recommendation per turn with the reasoning that beat the alternatives, measured against real
-stat targets for the scenario you are in, and an honest read on whether you are ahead or behind
-pace. When it is working from a stand-in — a scenario it has no profile for — it says so rather than
-presenting a guess as gospel.
-
----
-
-## Getting onto the Japanese client without touching the game
-
-The Japanese client wraps its executable in commercial anti-tamper. At startup it scans the game
-folder and refuses to launch if anything there is not stock. It is a real wall, and the usual way
-through it is to let a tool replace the game's executable with a patched one.
-
-**Overseer replaces nothing and injects nothing.**
-
-Instead of touching the game, a small launcher works alongside it from the outside. It wires into
-Steam's Launch Options, the genuine unmodified game starts through Steam exactly as it always does —
-authentication and all — and Overseer ends up loaded the same way the game loads any of its own
-libraries. Nothing is patched, nothing is hooked, and nothing of Overseer's runs inside the game
-process for the anti-tamper to find.
-
-Because the game's own files are never altered, a game patch has nothing of ours to overwrite: the
-same install keeps working across updates, with no reinstall and no waiting for a fix.
-
-The installer sets all of this up for you, including the Steam Launch Option. You never need to know
-any of it is there.
-
-
----
-
-## The entire game, in your language
-
-Overseer ships a complete English translation for the Japanese client and supports **26 languages**
-through community packs: UI, menus, skills and their descriptions, events, story, home dialogue,
-missions, and race commentary.
-
-- **It reads like the game, not like a machine.** Character names, support card titles and skill
-  names are protected from translation, so nobody is "Special Week" on one screen and something else
-  on the next. Strings the game assembles from parts — "Speed went up by 12" — are handled by rules
-  rather than fed through a translator a fragment at a time and returned as nonsense.
-
-- **Text fits its box.** English is wider than the Japanese it replaces, and the game's older text
-  components clip rather than wrap. Overseer wraps long lines on real measured widths, and shrinks
-  labels that still will not fit to a floor that stays legible instead of letting them truncate
-  mid-word.
-
-- **Optional on-device neural translation** fills anything a pack misses, running entirely on your
-  machine with no service and no API key. It is **off by default**, because packs are faster and
-  read better; turn it on only if you want coverage more than frame rate.
-
-- **Image and texture translation** for the art with text baked into it.
-
-- **You can fix anything yourself.** Any line can be overridden by hand in the panel, exported, and
-  shared as a pack. Packs built on one client work on the other.
-
----
-
-## What you get that a translation layer does not
-
-If all you want is the Japanese client in English, dedicated translation tools exist and they are
-reasonable at that one job. The difference is worth stating plainly, because it is not a matter of
-degree:
-
-| | A translation-only tool | Overseer |
-|---|---|---|
-| **Scope** | Translates text | Translates text, **and** prices every training, reveals every event outcome, forecasts races, optimises skills, ranks inheritance, and skips what you have seen |
-| **Clients** | One | Global and Japan, same build, same installer |
-| **Getting onto Japan** | Typically replaces the game's executable | Leaves the game untouched; a launcher steps aside during the startup scan |
-| **After a game patch** | A replaced executable is overwritten — reinstall, or wait for an update | Nothing was replaced, so nothing breaks |
-| **Setup** | Edit configuration files | Double-click one exe; it finds every client you have and sets each one up |
-| **Day-to-day control** | Config files, then restart | A live dashboard with a switch for everything, no restart |
-| **Removing it** | Put the executable back yourself | An uninstall button, plus a separate rescue uninstaller that works even if Overseer does not |
-| **If both are installed** | — | Overseer detects the conflict, moves the other tool aside into a dated backup outside the game folder, tells you exactly where it went, and deletes nothing |
-
-The honest summary: one of them is a translation layer. Overseer is a companion that happens to
-include a very good one.
-
----
-
-## HyperSkip — the parts you have seen two hundred times
-
-Every one of these is an individual switch, so you keep whatever you still enjoy:
-
-- **Event scenes** — straight to the outcome
-- **Training cut-ins** — the animation between you and your stats
-- **Race results** — the whole post-race sequence, including the walk back
-- **Skill learning** — the purchase flow
-- **The shop** — exchange and purchase confirmations
-- **Inspiration scenes**
-- **Rival scenes**
-- **Warning and confirmation dialogs** — the ones you always answer the same way
-- **Grand Live song confirmation**
-- **Race fast-forward** — for the races you do want to watch, just faster
-
-Skips are written to understand what is happening rather than to mash buttons. The race-result skip
-knows whether you actually won, and stands down rather than clicking through something that matters.
-
----
-
-## Everything else in the box
-
-| | |
+| You want to… | Overseer… |
 |---|---|
-| **Gamemaster** | One page for this turn, the race, the career, the Skill Optimizer, affinity and Grand Live — everything the current moment needs. |
-| **Grand Live** | Song offers decoded and scored, performance points and progress tracked, and the pick you want marked on the card in-game. |
-| **Legacy / inheritance** | The game's own affinity number for the pair you are hovering, live as you change the selection, with the whole candidate tray ranked. |
-| **Deck Builder** | Score a support deck against your own collection before you commit a career to it. |
-| **Opponent Hunter** | Team Trials: name the opponents worth beating and Overseer rerolls until one appears, reading the offer from the server rather than guessing at memory. |
-| **Un-Follower** | Prune inactive followers through the game's own request path, with a full preview of who goes before anything happens. |
-| **Career telemetry** | Optional, off by default, nothing uploaded. One plain JSON file per career: every turn's stats, energy and mood, the options the game offered with its own numbers and failure chances, what you chose, what it gained, and the final grade. Your own record of how you actually play. |
-| **Race exports** | Every race written out with the full field, times and result, into a folder that can tidy up after itself. |
-| **Discord webhooks** | A career-completion report with the trainee's art and your deck strip, plus an optional ping when the Opponent Hunter finds a target. One clean message per career, not a firehose. |
-| **Dashboard** | Everything above at `127.0.0.1:1620`, in a panel designed to stay out of your way. Search jumps to any page, setting or tool. |
-| **Performance** | FPS unlock, render scale, graphics and display options, and a UI speed multiplier, for people who would rather spend the frames elsewhere. |
-| **Accessibility** | Colour-vision-safe palettes, adjustable text scaling, and a panel that answers the keyboard. |
-| **Master switches** | One toggle per subsystem — translation, analysis, skips, overlay, exports, webhooks, performance, advisor. Turning one off stops that whole side of Overseer, which is the fastest way to answer "is Overseer involved in this?" |
-| **Logs** | What Overseer did and why, in plain language, with a live console when you want it. |
+| **Read the game** in your language | Replaces the game's own text, inside the game, from its own text database: twelve languages ship ready to go, on Global *and* JP. |
+| **Stop guessing** at events | Decodes every option's real outcome before you tap, and marks the branch that will fire right on the game's screen. |
+| **Train smarter** | Scores every facility from the game's exact numbers and rings the best pick on the training screen. |
+| **Win the race** | Shows each runner's chance to win, to place and to run out of stamina, before the gates open. |
+| **Spend your SP well** | Prices every skill at your hint discounts and marks the best set in the game's own shop: for rating, or for seconds off a race. |
+| **Plan your legacy** | Measures inheritance affinity in the game and searches your characters for the best parent rotations. |
+| **Get your evenings back** | Native skips and up to 20× UI speed turn a long career into a coffee break. |
+| **Know what a skill really does** | Shows the exact effect and trigger of every skill on Global, built from Global's own data. |
+| **Keep your history** | Records every career, race and veteran on your PC, with dashboards, leaderboards and exports. |
 
 ---
 
-## Quick start
+## Translation that reads like the game
 
-> **Download, double-click, play.** No Python, no Node, no extracting, no instructions.
+**The entire game, in your language, fully offline.** Not screenshots, not OCR, not a browser tab on your second monitor. Overseer replaces the text **inside the game**, straight from the game's own database, so every number is exact to the digit and no character's name ever comes out garbled.
 
-1. **Grab [`Overseer.exe`](https://github.com/Remezzo/Umamusume-Overseer/releases/latest)** and put it anywhere.
-2. **Double-click it.** It finds your game on any Steam drive — Global, Japanese, or both — installs
-   itself into each one it finds, and sets up the Japanese launcher if you have that client.
-3. **Start the game.** The dashboard opens at **`http://127.0.0.1:1620`**.
-4. **Pick your language** under Translation, and turn on the skips you want under HyperSkip.
-5. **Play.** Overseer fills in as you go.
+### Twelve languages in the box
 
-Closing the panel tab changes nothing — reopen `127.0.0.1:1620` whenever you like. Running both
-clients at once is fine; the second takes the next free port and opens its own panel.
+| | | | |
+|---|---|---|---|
+| English | French | Spanish | Italian |
+| German | Dutch | Swedish | Indonesian |
+| Malay | Filipino | Turkish | Vietnamese |
 
-**Requirements:** Windows 10/11 and Umamusume on Steam. That is the entire list.
+Every pack works on **both the Global and the Japanese client**. Menus, skills, events, story and live race commentary work the moment you pick one, with no internet needed. On the Japanese client the game starts **in English on a fresh install**, so you can play the version that gets new content first and read all of it.
 
-**Already on 1.0 or 1.0.1?** Download and run `Overseer.exe` once. It updates you in place and
-migrates the older install layout; every update after that arrives in the panel itself.
+### How it works: four layers, fastest first
+
+1. **The pack.** A translated copy of the game's own text database: menus, skills, events, story, race commentary. It's already there when a screen opens and costs nothing to run.
+2. **The glossary.** Text the game assembles as it runs (labels, counts, terms) never reaches its database, so no pack contains it. The per-language glossary covers those instantly.
+3. **Already translated.** Anything translated once is remembered and shown instantly forever after, and **your own fixes always win**.
+4. **The neural model** *(optional)*. Translates the rare line all three layers miss, on your PC, line by line as you play. Worth switching on for a while after a game update adds new text.
+
+**Names are protected** in every layer. Characters, skills, races and titles stay exactly what they are, in every language.
+
+### Machine Translation, built in
+
+- **On-device and offline.** Two models: *Fast* (0.6 GB) or *Quality* (1.4 GB, noticeably better text).
+- **One-click download.** A model you don't have has a **Download** button right under the picker, with live progress and Cancel. Files come from a pinned version on Hugging Face and are checked byte for byte before anything is replaced.
+- **Light when it's off.** The model only loads while Machine Translation is on. Switch it off and its memory is freed at once.
+- **A safety gate** refuses machine output that would damage a name, a number or a formatting tag; the game's own text shows instead of a broken line.
+
+### Build Packs: 25+ more languages, made on your PC
+
+Translate the whole game once, ahead of time, into a full pack for any of 25+ languages.
+
+- **Build outside the game** (recommended): full speed, no effect on your frame rate, and it keeps going after you quit.
+- **Or inside the game,** at the speed you choose: *Gentle*, *Background*, *Faster* or *Full speed*. It waits on hold until you pick one.
+- **Stop any time; it resumes** from where it stopped.
+- **After a game update,** *Translate what changed* only touches new or changed text: minutes, not hours.
+- **On JP it builds from the English pack**, which is human-made, because the model translates far better out of English than out of Japanese.
+- **A hand-made pack is never written over.**
+
+### Corrections and updates
+
+- **Fix any line permanently**, or pick one from the recently translated list.
+- **Share or import a glossary** as JSON.
+- **Check for pack updates** pulls only the files that changed, verifies them and swaps them in. Your corrections stay on top.
+
+### Detailed skill descriptions *(Global)*
+
+Turn it on and every skill description in the game becomes exact:
+
+> **Target Speed +0.35 m/s for 5 s** when: Final corner/straight AND In trailing 60% AND Overtaking
+
+The effect, the number, the duration and **every trigger condition**, in the format JP players already know. It's built from **Global's own skill data**, never copied from JP: 74 of Global's 726 skills have different numbers or conditions from their JP versions, and these follow Global. A patch that rebalances a skill needs no new Overseer.
+
+*Translation → Language & Pack, or Settings → General → Interface. Shows while the game is in English, from the next game start.*
+
+*Other tools translate a picture of the game. Overseer translates the game.*
 
 ---
 
-## Built to be trusted
+## Gamemaster: know it before you click
 
-Overseer is a finished product rather than a script dump, and it is unusually specific about what it
-does to your machine:
+The game has already decided what happens. Overseer reads that decision **before you commit**. Gamemaster is the page where it all comes together, one tab per moment of a career.
 
-- **It runs entirely on your PC.** Nothing is uploaded, ever. The only things Overseer sends
-  anywhere are the Discord webhook you configure yourself and its own update check.
-- **The dashboard is loopback-only** and refuses any request that did not come from its own page, so
-  nothing else on your machine and nothing on the web can drive it.
-- **Telemetry is off until you switch it on**, and even then contains nothing about you — no
-  account, no trainer identity, and no game API data of any kind. It is plain JSON; open it and read
-  it.
-- **The game's own files are never modified.** Overseer installs beside them, and the audio codec it
-  forwards to is left byte-for-byte untouched — verified end to end on a clean install.
-- **If another tool already holds the slot Overseer needs**, it says so, moves that tool aside into a
-  dated backup folder outside the game directory, prints exactly where it went, and deletes nothing.
-- **A failing feature degrades instead of taking the game down.** Every hook runs inside a guard, so
-  a fault costs you that one feature and nothing else. Genuine memory faults are deliberately not
-  swallowed — a corrupted process is never quietly continued.
-- **There is a rescue uninstaller.** A separate download that removes Overseer 1.0, 1.0.1 or 1.1 and
-  restores the game to stock — and does not need Overseer to be working to do it.
-- **It profiles its own cost and shows you the numbers.** Across a full career the overlay's
-  per-frame work averages 0.0 ms over 730,000 samples, with 99th-percentile frame gaps of 8 ms.
-  **Settings → Diagnostics** writes the same report for your machine, so "is this slowing my game
-  down?" is a question you can answer yourself instead of taking our word for it.
+### This turn
+
+**Every training facility, scored from the game's exact numbers.**
+
+- **The full picture per facility:** stat gains, skill points, energy, the **real failure chance**, bond progress, exact **rainbow** (friendship training) detection and skill hints. A hint shows the support card that will give it and that card's whole candidate pool, with skills you already hold marked *held*.
+- **The advisor's pick:** each facility is scored against stat targets specific to your trainee (scenario, distance and running style), scaled to where you are in the run and against her real stat caps. A stat that's behind pace is weighted up.
+- **Failure is a hard filter, not a score.** Below 30% energy the advisor won't suggest training at all, not even Wit: the advice becomes *Rest*, and it shows the failure number it refused.
+- **The pick is ringed on the game's own training screen**, with its reasoning in the panel and the rail.
+
+**Every event choice, decoded.** What each option *really* gives you (stats, skill hints, energy, mood, conditions, hidden branches), laid out before you tap.
+
+- **On Global** the game decides the branch before you press, so Overseer marks **the row that will fire**.
+- **On JP** the server rolls the branch when you press, so every row that *could* fire is shown with how often each one does, and the floor and ceiling of what you might get.
+- **Overseer never tells you which button to press.** It makes sure the press is an informed one.
+
+### Race
+
+The race in front of you, from the gate to the result. See [Racing](#-racing-the-whole-race-before-during-and-after).
+
+### Career
+
+- **Race Plan:** your trainee's objectives in order, with the one the game is asking for now marked.
+- **Inheritance Sparks:** the whole end-of-career spark pool, before you pick.
+- **Race History:** every race this session.
+
+### Skill Optimizer
+
+On the end-of-career skill screen, press **Recommend**.
+
+- **It prices every skill at your hint discounts,** weighted for your trainee's distance and style, and finds the set that raises your **rating** most within your SP.
+- **Or optimise for race time:** pick a race preset, and it buys the set that takes the most **seconds** off your finish on that course. A cheap speed skill on the last straight can beat an expensive one that fires when you're already at top speed.
+- **Upgrades are priced at what they add,** so ◎ over an owned ○ costs what it really costs.
+- **Each recommended row is marked in the game's own shop.** It never buys anything for you.
+
+### Affinity
+
+Inheritance planning from affinity **measured in the game itself**: a loop planner that searches your characters for the best legacy rotations, with data coverage shown. On Global it also shows a live readout as you pick parents on Legacy Select.
+
+### Friendship
+
+Your six support cards' bonds this career: who is close to a rainbow, who will get there before the run ends, and who won't. It's projected from *your* run and uses the same logic as the training advisor, so the two never disagree.
+
+### Your scenario: Grand Live
+
+The last tab is named after the scenario you're running.
+
+- **On the lesson screen,** the best of the three cards is marked in the game.
+- **Every song and technique ranked** by what it's worth to *this* run.
+- **A pre-farm planner** that prices each song against the Performance Points you've already saved.
+- **The concert schedule,** so you can see which turn each one lands on.
+
+Training advice, event decoding, race chances, the Skill Optimizer and the in-game marks work in **every** scenario.
+
+*Stop guessing. The data was always there. Overseer just shows it to you in time.*
 
 ---
 
-## Part of the Icarus Suite
+## Racing: the whole race, before, during and after
 
-Overseer is one tool in a family of Umamusume utilities by **Icarus Network**. Join the hub for
-releases, help, and the wider toolset:
+- **Chances at the entry screen.** At the entry screen the server sends every runner's exact stats, aptitudes, mood and running style a few seconds before you have to decide. Overseer runs that field through a simulation of the game's own race physics a couple of hundred times: **win chance, top-3 chance, and how often each runner runs out of stamina before the line**. It's computed only from what is known *before* the gates open, never peeked from the result.
+- **Race Field, the one race table.** Every rival's stats (on hover), the three aptitudes that matter for *this* race, mood, popularity and the simulated chances, with your row lit. After the race it becomes the finishing order, place and margin first, with the chances still beside them, so you can see who beat the odds.
+- **Live race.** The game's own simulation read frame by frame while the race plays: positions, gaps, speed and stamina for every runner.
+- **Race Forecast.** The finishing order, decoded from the game's own race data the moment the race loads, so you know the result before you watch it.
+- **Race replays.** Every race saved as a file a race-replay viewer opens, for running lines, margins and which skills each runner activated. Player ids are stripped first.
+- **Team Trials.** The Opponent Hunter finds the trainers you want to race, and every Team Trials result can be exported with each runner's skills, sparks and parents.
 
-<div align="center">
+---
 
-### [→ discord.gg/wpbd3hTBDc](https://discord.gg/wpbd3hTBDc)
+## In the game itself: the rail and the marks
 
-</div>
+**The live rail** is the right-hand column of the panel, and it follows you across every page: this turn's advice, every event option and what it pays, the race forecast, the Grand Live pick, energy and stats. **Pop out** puts it in its own window beside a fullscreen game.
+
+**On the game's own screens**, Overseer draws in five places:
+
+1. **A ✓ and an outline** on the event branch that will fire.
+2. **The recommended Grand Live lesson card.**
+3. **Each skill row** the Skill Optimizer says to buy.
+4. **A ring on the training facility** the advisor picks this turn.
+5. **An optional FPS counter.**
+
+All the marks are **one switch and one colour** under *Settings → General → Overlay*. Turn it off and every mark disappears at once.
+
+---
+
+## HyperSkip: respect for your time
+
+You've watched that training cut-in four hundred times. Overseer gives you the hours back.
+
+**Auto-skip**, driven by the game's **own** skip and fast-forward routines, so it's instant and never desyncs the screen:
+- Training · Events · Shop · Rival · Race result (only when you've won)
+
+**Auto-options**, each its own switch, each **off by default**:
+- Event choice → top option · Confirm warnings (consecutive races and the like) · Inspiration · Skill learning · Grand Live song confirm
+
+**Race Fast-Forward** speeds up races automatically, and only when you've won. Lose, or an unclear result, and it stops and hands the controls back.
+
+**UI Speed** runs menus, transitions and event text at up to **20×**, at whatever pace you can read.
+
+A guard steps back the moment a skip doesn't land, so the screen always stays yours, and a career that took an evening takes a coffee break.
+
+---
+
+## Performance
+
+- **Low Resource Mode** runs the game smoothly on modest hardware, in tiers you choose.
+- **Frame rate:** cap it anywhere from 1 to 300 or run it unlimited, with an optional in-game FPS counter.
+- **Graphics:** force maximum 3D model quality, and set anti-aliasing, shadows and shadow distance yourself.
+- **Display & Window:** keep the game always on top, or block it from minimising.
+
+---
+
+## Accessibility
+
+- **Colour-vision modes** for the panel, plus an **in-game filter** with adjustable strength, with a live preview.
+- **Reduce motion** and **high contrast.**
+- **Interface text size** you can scale.
+
+---
+
+## Tools
+
+### Deck Builder
+Build and analyse support decks from **your client's own database**.
+- **Owned** shows your real collection at its real levels; **All cards** lets you theorycraft anything.
+- **Set each card's limit break**, and its level follows.
+- **Effects Breakdown, Skills, Skill Analysis and Training Analysis** update as you edit, including rainbow chance per training and stat gains per turn.
+- **Save a deck as a profile** and load it back in one click.
+
+### Rating Calculator
+Type any stat line, unique skill level and skill set, and see the **rating**, the **rank** it lands on and **how far the next rank is**, from the rank table your own client ships. Global and JP rank tables differ above UG1, and JP has two hundred tiers Global has never seen, so Overseer always reads yours.
+
+### Opponent Hunter *(off until you start it)*
+Rolls the Team Trials opponent list until a target trainer appears (by name or UID, several at once), then stops and alerts you with a Windows notification and, optionally, a webhook ping to your phone. It uses the game's own button at a human pace.
+
+### Room Finder *(off until you start it)*
+Refreshes Room Match until a room you named appears (by room name, id or host), then stops and raises a Windows notification. About one refresh every three seconds, slowing down and then stopping if the game stops answering. **It never joins for you.**
+
+### Un-Follower *(Global, off until you start it)*
+Trims your oldest inactive followers when the list nears the 1,000 cap, through the game's own remove flow. You preview every name first, a whitelist always wins, and it stops itself on anything unexpected.
+
+---
+
+## Telemetry & your data
+
+Telemetry has its own page, with every export beside it.
+
+### Career telemetry *(on by default, never uploaded)*
+
+A turn-by-turn record of every career, on your PC:
+- **What was on offer** each turn: every facility, the races you could enter, the skill shop as it stood.
+- **What you chose and what happened**: gains, events and their outcomes, races and results, skills bought.
+- **The context:** your deck, your parents' and grandparents' sparks and affinity from turn 1, and **the score the run would end on** at every step.
+
+It's never trimmed, rotated or capped. It never contains your account, trainer identity or any game API data. **Prepare a file to send** bundles this session, the last one, your complete runs or everything into one compressed file, to share in the Discord and help improve the advice everyone gets.
+
+### Data Export *(each off until you turn it on)*
+
+- **Races:** every race as a replay file the race viewers open, grouped by race type.
+- **Team Trials:** every result with each runner's real trained uma: skills, sparks and parents.
+- **Veterans:** your full trained roster, which also powers the Dashboard's Veterans.
+- **Files & retention:** every folder with its size, and **Open file location** on every tab. Keep everything (the default), or the newest 100/250/500/1000 races per race type. Nothing is deleted unless you choose a limit.
+
+---
+
+## Dashboard
+
+- **Overview:** the career you're running (turn and date, stats against their caps, the advisor's scores, decisions, races, skills bought), this session, your career stats, recent activity and what happens next.
+- **History:** sessions, run history, an all-time leaderboard, records and a Hall of Fame.
+- **Trends:** charts and summary cards across your finished careers.
+- **Veterans:** every trained horsegirl with her sparks and her parents'.
+  - A summary band: veterans, locked, best grade, average score, best spark pool, scenarios.
+  - Filters for grade, scenario, aptitude, style and lock.
+  - **Star-count spark filters that work in any pack language.**
+  - Side-by-side **Compare** for up to four, with the best value in each row lit.
+  - Your favourites from the game starred, and **CSV export** of the current view.
+- **Roster:** every trainee your account can run, how many careers each has had, and how far her permanent **Bond** has come, straight from the game. Search it, filter to the ones you've never run, sort by bond.
+
+---
+
+## Settings and the panel
+
+The control panel lives at `127.0.0.1:1620` and opens for you when the game starts. A three-question **first-run setup** gets you going, and everything it sets stays in Settings.
+
+**Settings → General**, in five sections:
+- **Interface:** the panel's own language (**English, French, German or Spanish**), auto-open, streamer mode, detailed skill descriptions.
+- **Overlay:** the one switch and colour for every mark Overseer draws in the game.
+- **Discord:** optional **rich presence** showing the scenario, the in-game date and who you're raising. Never your trainer name, UID or anything that identifies you.
+- **System:** a master switch for every subsystem (the quickest way to find out whether Overseer is involved in something), plus health, memory and the translation model.
+- **Maintenance:** diagnostics and uninstall.
+
+**Settings → Shortcuts.** Every page and the search have keyboard shortcuts you can change. A key the browser would grab first is refused, and it tells you which. **Ctrl+K** (or **/**) searches every page, tab and setting by name.
+
+**Settings → Webhooks.**
+- **What posts:** a career finished, an opponent found, a room found.
+- **What a post carries:** the sections you choose, delivery attempts and tags.
+- **Where it goes:** as many endpoints as you like. Discord URLs get a rich embed; anything else gets a clean JSON envelope.
+- **Saved URLs are hidden** in the panel and never shown again.
+
+**Streamer mode** masks account identities wherever the panel shows one: UIDs become dots, names keep their first letter.
+
+**Logs** has Decision Reasoning, Player Actions and the Console, plus **Export**: one file with everything a bug report needs.
+
+**Catalogue** shows the rest of the Icarus family and which client each tool supports.
+
+**Help** matches this build line for line: every feature explained, guides for the tricky parts (training calls, event branches, friendship, rating vs race time, Grand Live, the Deck Builder, building a pack, your files) and troubleshooting.
+
+---
+
+## Global and JP
+
+**One build runs on both.** Overseer works out which client it's attached to on its own, and the panel hides whatever doesn't apply.
+
+| | Global | Japanese |
+|---|:---:|:---:|
+| Training advice, event decoding, race chances | Yes | Yes |
+| Skill Optimizer, Grand Live, in-game marks | Yes | Yes |
+| HyperSkip, Performance, Deck Builder, webhooks | Yes | Yes |
+| Twelve translation packs | Yes | Yes |
+| Starts in English out of the box | (already English) | Yes |
+| Detailed skill descriptions | Yes | (the English pack has its own) |
+| Live Legacy Select affinity readout | Yes | — |
+| Un-Follower | Yes | — |
+
+**The Japanese client needs a launcher**, and Overseer sets it up for you. The JP client checks its own folder at startup and refuses to run if it finds a mod, so Overseer installs a small launcher and points Steam's launch options at it. It steps Overseer aside for that check and puts it back as the game loads. You press Play as normal and never see it.
+
+**Everything is read from the database *your* client installed.** A game patch that adds or rebalances something needs no new Overseer to stay accurate.
+
+---
+
+## Private by architecture
+
+- **Everything runs on your PC.** The panel only listens on your own machine.
+- **Translation is on-device.** The only download is the optional model, and only when you ask for it.
+- **Your data never leaves your computer** unless you choose to send a file. Telemetry never contains your account, trainer identity or any game API data, and exported files have player ids stripped.
+- **Overseer never touches your account server-side.** It's an unofficial companion that improves what *you* see and do, not a bot playing in your place.
+
+**Light on your PC, too.** Overseer's own work per frame is measured in fractions of a millisecond, settings save without making the game wait for the disk, and closed panel pages stop polling. The optional translation model is the only heavy part, and it only loads while you have Machine Translation on.
+
+---
+
+## Install, update, uninstall
+
+1. **[Download `Overseer.exe`](../../releases/latest).** One file, everything bundled.
+2. **Double-click it.** Windows SmartScreen? *More info → Run anyway.* If your antivirus flags the overlay loader, that's a known false positive: allow-list the game folder.
+3. **That's it.** The game launches, the panel opens, and every feature above is a switch away. On the Japanese client, Overseer sets up its own launcher.
+
+**Updates install themselves**, checked against the release's published hash, and translation packs update separately through *Check for pack updates*.
+
+**Already using another tool that hooks the same file?** The installer says so, moves it safely aside with a backup, and never touches a setup it doesn't recognise.
+
+**Uninstalling puts the game back exactly as it was.** Use *Settings → General → Maintenance*, or `Overseer-Uninstall.exe` from the release page if Overseer itself won't start. Your career telemetry is kept unless you ask for it to go.
+
+**Requirements:** Windows 10/11 · Umamusume: Pretty Derby on Steam (Global or Japanese) · windowed or borderless mode. No runtimes, no dev tools, and no internet needed for the built-in languages.
+
+---
+
+## Troubleshooting
+
+- **The game won't launch.** Close any other mod or tool that injects into the game. Deleting `cri_mana_vpx.dll` from the game root alone puts the game back to vanilla. Never touch the file inside `Plugins\x86_64`: that one is the game's.
+- **The panel won't load.** The game has to be running: the panel at `127.0.0.1:1620` is served only while the game is open.
+- **JP shows "Communication error" (Code 102).** That's the game losing its connection to Cygames, most often through a VPN whose address is blocked. Try a different Japan server and press Retry. Overseer doesn't touch the game's network.
+- **A translation looks wrong.** Correct any line under *Translation → Corrections*, or run *Check for pack updates*.
+- **A panel says a screen isn't open.** Some tools read a screen only while you're on it (Followers, Select Opponent, Room Match). Open the screen and the panel fills.
+- **Veterans is empty.** Turn on *Telemetry → Veterans*, then open your Trained Uma list in the game once.
+- **Something else?** *Logs → Export* saves one file with everything we need. Bring it to the [Discord](https://discord.gg/wpbd3hTBDc).
 
 ---
 
 ## FAQ
 
-**Does it play the game for me?**
-No. Overseer is a companion — it reads what the game is doing and shows you what it knows. Every
-decision stays yours. The two features that do act on their own, the Opponent Hunter's reroll and
-the follower pruner, are off by default and show you what they will do before they do it.
+**Does it play the game for me?** No. Overseer shows you information and speeds up what you've already seen. The few optional automations (auto-options, Opponent Hunter, Room Finder, Un-Follower) are off by default and only do exactly what their switch says.
 
-**Is this safe for my account?**
-Any third-party tool that attaches to the game carries inherent risk, and nothing anyone tells you
-makes that risk zero. Overseer does not automate play, does not touch the server, and does not send
-your data anywhere — but it is still a modification, and using it is at your own risk.
+**Does it tell me which option to pick?** For training it gives a recommendation with its reasoning. For events it shows what every option does and which branch will fire, and leaves the choice to you.
 
-**I already use something on Japan. Why switch?**
-If you only want Japanese text in English and you only play Japan, you may not need to. The case for
-Overseer is that it is one tool for both clients, it does far more than translate, and it gets onto
-Japan without replacing the game's executable — so a game patch does not send you back to the
-download page.
+**Global or Japanese?** Both, from the same download, with the same features apart from the few in the table above.
 
-**Will it slow my game down?**
-It has not in measurement, and you do not have to take that on faith — Settings → Diagnostics
-produces the same profile on your hardware. If you want every frame back, the neural translator is
-off by default for exactly that reason, and every subsystem has its own switch.
+**Will it slow my game down?** No: its own per-frame cost is a fraction of a millisecond. If you're short on RAM, leave Machine Translation off; the packs translate the game without it.
 
-**Does the game need to be open?**
-Yes, for anything that reads the game. Overseer lives inside it, and the dashboard is a window onto
-what it is seeing. The Deck Builder, your exports and your telemetry keep working with the game
-closed.
+**Do I need the translation model?** No. The twelve packs, the glossary and your corrections all work without it. The model only matters for building new packs or catching the rare untranslated line.
 
-**Can I run Global and Japan at the same time?**
-Yes. Each gets its own panel on its own port, and both run the same build.
+**Where's my data?** Beside the game, in `UmamusumePrettyDerby_Data\Plugins\x86_64`. *Telemetry → Files & retention* shows every folder and its size. Note that uninstalling the *game* through Steam removes that folder too, so copy anything you want to keep first.
 
-**I have another tool installed already.**
-Only one thing can hold the file both tools need. Overseer notices, moves the other one aside into a
-dated backup outside the game folder, and tells you where it went — nothing is deleted, and you can
-put it back whenever you like.
+**Is my account safe to show on stream?** Switch on streamer mode, and Discord rich presence never carries your identity in the first place.
 
-**Windows Defender flagged it.**
-Overseer installs a proxy library next to the game, which is exactly the shape heuristics look for.
-The installer offers to add a folder exclusion and prints the command to add or remove it yourself.
-It is announced, never silent.
-
-**How do I remove it?**
-Either the uninstall button in the panel, or the separate `Overseer-Uninstall.exe` from the releases
-page, which works even when Overseer does not. Both restore the game to stock. Your telemetry and
-settings are kept unless you ask for them to go.
-
-**Where does my data live?**
-Beside the game, in the folder Overseer installs into. Back that folder up and you have backed up
-everything. Note that uninstalling the game through Steam takes that folder with it.
-
-**Can I contribute a translation?**
-Yes — any line can be overridden in the panel, and packs export and import. Come to the Discord.
+**How do I get help?** *Help* inside the panel covers every feature, and the [Discord](https://discord.gg/wpbd3hTBDc) is where we answer questions and take bug reports.
 
 ---
 
-## Disclaimer & license
+<div align="center">
 
-Overseer is an independent, unofficial tool. It is **not affiliated with, endorsed by, or sponsored
-by Cygames, Inc.** "Umamusume: Pretty Derby" and all related names and marks are the property of
-their respective owners.
+### Part of Icarus
 
-Overseer is **proprietary software** — see [LICENSE](LICENSE). You may download and run the official
-build for personal use; you may **not** copy, modify, redistribute, or reuse it or its code. All
-rights reserved © 2026 Remezzo / Icarus Network.
+Every tool speaks the game's own API. The same protocol work sits underneath each one; each does a different job on top.
+**Icarus** (career automation) · **Sundial** (multi-account manager) · **Fortuna** (account reroller) · **Un-Follower** (follower cleanup) · **Overseer** (this) · **Navigator** (protocol research)
+
+[**Join the community on Discord →**](https://discord.gg/wpbd3hTBDc)
+
+<sub>Overseer is proprietary, closed-source software — see [LICENSE](LICENSE). Redistribution, modification, and reverse engineering are not permitted. Not affiliated with, endorsed by, or sponsored by Cygames, Inc. All rights reserved © 2026 Remezzo / Icarus.</sub>
+
+</div>
+
 
